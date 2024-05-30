@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamifikace Třídy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gamifikace Třídy</h1>
+    <div id="classRoster">
+        <div class="group" id="group1">
+            <h2>Skupina 1</h2>
+            <div class="student" data-student="1">
+                <span class="name">Student 1</span>
+                <div class="controls">
+                    <span class="points">0</span>
+                    <button onclick="updatePoints(1, 1)">+</button>
+                    <button onclick="updatePoints(1, -1)">-</button>
+                </div>
+            </div>
+            <!-- Přidejte více studentů podle potřeby -->
+        </div>
+        <div class="group" id="group2">
+            <h2>Skupina 2</h2>
+            <div class="student" data-student="2">
+                <span class="name">Student 2</span>
+                <div class="controls">
+                    <span class="points">0</span>
+                    <button onclick="updatePoints(2, 1)">+</button>
+                    <button onclick="updatePoints(2, -1)">-</button>
+                </div>
+            </div>
+            <!-- Přidejte více studentů podle potřeby -->
+        </div>
+        <div class="group" id="group3">
+            <h2>Skupina 3</h2>
+            <div class="student" data-student="3">
+                <span class="name">Student 3</span>
+                <div class="controls">
+                    <span class="points">0</span>
+                    <button onclick="updatePoints(3, 1)">+</button>
+                    <button onclick="updatePoints(3, -1)">-</button>
+                </div>
+            </div>
+            <!-- Přidejte více studentů podle potřeby -->
+        </div>
+        <div class="group" id="group4">
+            <h2>Skupina 4</h2>
+            <div class="student" data-student="4">
+                <span class="name">Student 4</span>
+                <div class="controls">
+                    <span class="points">0</span>
+                    <button onclick="updatePoints(4, 1)">+</button>
+                    <button onclick="updatePoints(4, -1)">-</button>
+                </div>
+            </div>
+            <!-- Přidejte více studentů podle potřeby -->
+        </div>
+    </div>
+
+    <div class="leaderboard">
+        <h2>Pořadí Jednotlivců</h2>
+        <ol id="individualLeaderboard">
+            <!-- Seznam jednotlivců bude naplněn zde -->
+        </ol>
+    </div>
+
+    <div class="team-scores">
+        <h2>Pořadí Týmů</h2>
+        <ol id="teamLeaderboard">
+            <!-- Seznam týmů bude naplněn zde -->
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
