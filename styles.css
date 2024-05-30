@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.group {
+    margin-bottom: 20px;
+}
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.points {
+    margin-left: 10px;
+}
+.controls button {
+    margin-left: 5px;
+}
+.leaderboard, .team-scores {
+    margin-top: 30px;
+}
